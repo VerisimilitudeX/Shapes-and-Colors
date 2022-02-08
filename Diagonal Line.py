@@ -1,8 +1,3 @@
-"""
-LESSON: 3.2 - Shapes & Color
-WARMUP 1
-"""
-
 import pygame
 pygame.init()
 window = pygame.display.set_mode([400, 400])
