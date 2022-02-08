@@ -17,8 +17,12 @@
   the window to draw in
   the color to use to draw the shape
 * Rectangle
-  Information needed to draw rectangle:
-    x of the left-hand side
-    y of the top
-    width of the rectangle
-    height of the rectangle
+  * Information needed to draw rectangle:
+    * x of the left-hand side
+    * y of the top
+    * width of the rectangle
+    * height of the rectangle
+  * Rectangles take two steps
+  * Step one defines the position and size of the rectangle (CAPITAL R Rect)
+  * Step two draws the rectangle (lowercase r rect)
+  * Step two requires the rectangle variable from step 1
