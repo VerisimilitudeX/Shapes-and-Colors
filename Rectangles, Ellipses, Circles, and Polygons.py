@@ -1,9 +1,3 @@
-"""
-LESSON: 3.2 - Shapes & Color
-TECHNIQUE 1: Defining a Shape
-DEMO
-"""
-
 import pygame
 pygame.init()
 
