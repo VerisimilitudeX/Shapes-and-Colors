@@ -1,9 +1,3 @@
-"""
-LESSON: 3.2 - Shapes & Color
-TECHNIQUE 1: Defining a Shape
-PRACTICE 2
-"""
-
 import pygame
 pygame.init()
 
@@ -26,6 +20,3 @@ pygame.draw.polygon(window, color, [top_left, top_right, top_bottom_right, top_b
 
 pygame.display.flip()
 pygame.time.wait(100000)
-
-
-# Turn in your Coding Exercise.
