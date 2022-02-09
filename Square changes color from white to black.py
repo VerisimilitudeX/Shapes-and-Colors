@@ -3,9 +3,9 @@ pygame.init()
 
 window = pygame.display.set_mode([400, 400])
 
-red = 0
-green = 0
-blue = 0
+red = 255
+green = 255
+blue = 255
 
 timer = 255
 while timer >= 0:
@@ -20,9 +20,9 @@ while timer >= 0:
     rectangle = pygame.Rect(100, 100, 200, 200)
     pygame.draw.rect(window, color, rectangle)
 
-    red += 1
-    green += 1
-    blue += 1
+    red -= 1
+    green -= 1
+    blue -= 1
 
     pygame.display.flip()
     pygame.time.wait(10)
