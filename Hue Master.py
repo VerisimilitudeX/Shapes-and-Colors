@@ -41,7 +41,6 @@ pygame.display.flip()
 
 
 #### ---- GET USER'S GUESS ---- ####
-
 # Have the user guess the r value. Typecast to an int
 # and assign to guess_r.
 guess_r = int(input("What is the r value? "))
@@ -63,7 +62,7 @@ guess_color = (guess_r, guess_g, guess_b)
 
 # Open a new window using SET_MODE with size [400, 200]
 # and assign it to the variable window
-pygame.display.set_mode([400, 200])
+window = pygame.display.set_mode([400, 200])
 
 # FILL the window with guess_color
 window.fill(guess_color)
