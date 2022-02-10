@@ -23,11 +23,9 @@ purple = (120, 120, 240)
 
 # Create a RECT with left side 0, top 0, width 200 and
 # height 300. Assign it to a variable called left.
-# ---> TEST AFTER THIS LINE <--- #
 left = pygame.Rect(0, 0, 200, 300)
 
 # DRAW the left RECT using window and gray
-# ---> TEST AFTER THIS LINE <--- #
 pygame.draw.rect(window, gray, left)
 
 # Create a RECT with left side 200, top 0, width 200
@@ -35,7 +33,6 @@ pygame.draw.rect(window, gray, left)
 right = pygame.Rect(200, 0, 200, 300)
 
 # DRAW the right RECT using window and purple
-# ---> TEST AFTER THIS LINE <--- #
 pygame.draw.rect(window, purple, right)
 
 
@@ -47,12 +44,10 @@ mid  = (150, 150, 200)
 
 # DRAW a CIRCLE in window with color mid at position
 # (100, 150) with radius 20
-# ---> TEST AFTER THIS LINE <--- #
 pygame.draw.circle(window, mid, (100, 150), 20)
 
 # DRAW another CIRCLE in window with color mid at
 # position (300, 150) with radius 20
-# ---> TEST AFTER THIS LINE <--- #
 pygame.draw.circle(window, mid, (300, 150), 20)
 
 
@@ -62,7 +57,6 @@ pygame.draw.circle(window, mid, (300, 150), 20)
 pygame.display.flip()
 
 # Get input to pause the program
-# ---> TEST AFTER THIS LINE <--- #
 input("Press enter to pause the program")
 
 white = (255, 255, 255)
