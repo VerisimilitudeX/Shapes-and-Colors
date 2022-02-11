@@ -1,8 +1,3 @@
-"""
-LESSON: 3.2 - Shapes & Color
-EXERCISE: Shade Imposter
-"""
-
 #### ---- SETUP ---- ####
 
 # Import the random library
@@ -16,10 +11,10 @@ pygame.init()
 
 # SET_MODE to open a window with size [600, 300] and
 # assign the result to variable window
-pygame.display.set_mode([600, 300])
+window = pygame.display.set_mode([600, 300])
 
 # FILL the window with the color (255, 255, 255)
-window.fill(255, 255, 255)
+window.fill((255, 255, 255))
 
 # Assign variable left the value 50
 left = 50
@@ -37,7 +32,6 @@ top = 50
 bottom = 250
 
 # Assign variable count the value 1
-# ---> TEST AFTER THIS LINE <--- #
 count = 1
 
 # Get a random int 1 - 3, and assign to the
@@ -51,7 +45,6 @@ r = random.randint(0, 230)
 g = random.randint(0, 230)
 
 # Get a random int between 0 and 230 and assign to b
-# ---> TEST AFTER THIS LINE <--- #
 b = random.randint(0, 230)
 
 
@@ -61,7 +54,7 @@ b = random.randint(0, 230)
 while count <= 3:
 
     # If count is equal to different
-    if count == different
+    if count == different:
         
         # Create a COLOR tuple with the values r + 15,
         # g + 15, b + 15, and assign to variable color
@@ -72,53 +65,44 @@ while count <= 3:
 
         # Create a COLOR tuple with values r, g, b and
         # assign it to variable color
-
+        color = (r, g, b)
 
     # DRAW a POLYGON with points (left, bottom),
     # (middle, top), and (right, bottom) in window
     # using color variable
-
+    pygame.draw.polygon(window, color, [(left, bottom), (middle, top), (right, bottom)])
 
     # Increment count by 1
-    # ---> TEST AFTER THIS LINE <--- #
-
+    count += 1
 
     # Increment left by 200
-
+    left +- 200
 
     # Increment middle by 200
-
+    middle += 200
 
     # Increment right by 200
-    # ---> TEST AFTER THIS LINE <--- #
-
+    right += 200
 
 # FLIP the display
-
+pygame.display.flip()
 
 
 #### ---- USER GUESS ---- ####
 
 # Ask user to guess which shape is a different color.
 # Typecast to an int and assign to variable guess.
-# ---> TEST AFTER THIS LINE <--- #
-
+guess = int(input("Was the different color 1, 2, or 3? "))
 
 # If guess is equal to different
-
+if guess == different:
 
     # Tell the user they guessed right
-    # ---> TEST AFTER THIS LINE <--- #
-
+    print("You got it! ")
 
 # Else
-
+else:
 
     # Tell the user what the correct answer was
     # (variable different)
-    # ---> TEST AFTER THIS LINE <--- #
-
-
-
-
-# Turn in your Coding Exercise.
+    print("Sorry, that's not right.  It was " + str(different) + " . ")
