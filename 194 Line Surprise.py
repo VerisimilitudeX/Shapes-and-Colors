@@ -128,7 +128,7 @@ if mode1 == "manual":
     pygame.time.wait(10000)
 elif mode1 == "predefined":
     #Circle 1
-    circle1colorinput = input("What color do you want circle 1 to be? Your options are: red, pink, purple, blue, turquoise, green, yellow, or orange")
+    circle1colorinput = input("What color do you want circle 1 to be? Your options are: red, pink, purple, blue, turquoise, green, yellow, or orange\n")
     if circle1colorinput == "red":
         pygame.draw.circle(window, (255, 0, 0), (200, 200), 150)
     elif circle1colorinput == "pink":
@@ -149,7 +149,7 @@ elif mode1 == "predefined":
     input("Press enter to create the second circle")
 
     #Circle 2
-    circle2colorinput = input("What color do you want circle 2 to be? Your options are: red, pink, purple, blue, turquoise, green, yellow, or orange")
+    circle2colorinput = input("What color do you want circle 2 to be? Your options are: red, pink, purple, blue, turquoise, green, yellow, or orange\n")
     if circle2colorinput == "red":
         pygame.draw.circle(window, (255, 0, 0), (200, 200), 100)
     elif circle2colorinput == "pink":
@@ -170,7 +170,7 @@ elif mode1 == "predefined":
     input("Press enter to create the last circle")
 
     #Circle 3
-    circle3colorinput = input("What color do you want circle 3 to be? Your options are: red, pink, purple, blue, turquoise, green, yellow, or orange")
+    circle3colorinput = input("What color do you want circle 3 to be? Your options are: red, pink, purple, blue, turquoise, green, yellow, or orange\n")
     if circle3colorinput == "red":
         pygame.draw.circle(window, (255, 0, 0), (200, 200), 50)
     elif circle3colorinput == "pink":
