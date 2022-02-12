@@ -1,6 +1,5 @@
 #User-input colored circles
 #Lets the user choose colors and draw a random circle of each color every time it is loaded]
-
 #Defining pygame and window
 import pygame
 import sys
