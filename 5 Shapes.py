@@ -14,12 +14,10 @@ while count <= 5:
 
     rect = pygame.Rect(count * 80 - 60, 100, 40, 200)
 
-    # Draw a rectangle with border of increasing width
     pygame.draw.rect(window, rect_color, rect)
     x += 1
     pygame.draw.rect(window, outline_color, rect, x)
 
-    # Draw an ellipse with border of increasing width
     pygame.draw.ellipse(window, ellipse_color, rect)
     pygame.draw.ellipse(window, outline_color, rect, x)
 
