@@ -15,21 +15,13 @@ loops = 10
 pygame.draw.rect(window, left_color, left_rect)
 pygame.draw.rect(window, right_color, right_rect)
 
-# Declare alternating loop boolean
-
 while loops > 0:
 
-    # Every other loop, draw the right rectangle
-    # over the left one
     if loops % 2 == 0:
         pygame.draw.rect(window, left_color, left_rect)
 
-    # Otherwise, draw the left rectangle
-    # over the right one
     else:
         pygame.draw.rect(window, right_color, right_rect)
-
-    # Switch alternating boolean
 
     pygame.display.flip()
     pygame.time.wait(1000)
