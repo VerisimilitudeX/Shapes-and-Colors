@@ -1,5 +1,3 @@
-# Add outline to existing shapes to find hidden picture
-
 import pygame
 pygame.init()
 
@@ -9,7 +7,6 @@ white = (255, 255, 255)
 window = pygame.display.set_mode([400, 400])
 window.fill((50, 50, 50))
 
-# Outline each shape
 pygame.draw.circle(window, white, (200, 150), 200)
 pygame.draw.circle(window, black, (200, 150), 200, 3)
 
