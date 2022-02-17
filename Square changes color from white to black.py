@@ -12,11 +12,8 @@ while timer >= 0:
 
     window.fill((128, 128, 128))
 
-    # Make a color that starts white and becomes black
-
     color = (red, green, blue)
-    
-    # Draw the rectangle of that color
+
     rectangle = pygame.Rect(100, 100, 200, 200)
     pygame.draw.rect(window, color, rectangle)
 
