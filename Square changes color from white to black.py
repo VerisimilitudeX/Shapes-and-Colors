@@ -9,7 +9,6 @@ blue = 255
 
 timer = 255
 while timer >= 0:
-
     window.fill((128, 128, 128))
 
     color = (red, green, blue)
